@@ -1,0 +1,9 @@
+.main-container {
+  display: grid;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.main-content {
+  margin: auto;
+}
