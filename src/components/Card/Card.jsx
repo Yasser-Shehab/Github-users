@@ -3,12 +3,13 @@ import "./Card.css";
 
 export default class Card extends Component {
   render() {
+    const { avatar_url, name, company } = this.props;
     return (
       <div className="github-profile">
-        <img className="profile__img" src="https://via.placeholder.com/150" />
+        <img className="profile__img" src={avatar_url} />
         <div className="info">
-          <div className="name">Name here...</div>
-          <div className="company">Company here..</div>
+          <div className="name">{name}</div>
+          <div className="company">{company}</div>
         </div>
       </div>
     );
