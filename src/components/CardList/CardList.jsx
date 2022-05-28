@@ -1,29 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Card from "../Card/Card";
 
-const testData = [
-  {
-    name: "Dan Abramov",
-    avatar_url: "https://avatars0.githubusercontent.com/u/810438?v=4",
-    company: "@facebook",
-  },
-  {
-    name: "Sophie Alpert",
-    avatar_url: "https://avatars2.githubusercontent.com/u/6820?v=4",
-    company: "Humu",
-  },
-  {
-    name: "Sebastian Markbåge",
-    avatar_url: "https://avatars2.githubusercontent.com/u/63648?v=4",
-    company: "Facebook",
-  },
-];
-
-function CardList(props) {
+function CardList({ profiles }) {
   return (
     <div>
-      {testData.map((user) => (
-        <Card {...user} />
+      {profiles.map((user, index) => (
+        <Card key={index} {...user} />
       ))}
     </div>
   );

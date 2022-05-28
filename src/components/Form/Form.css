@@ -20,4 +20,9 @@
   height: 35px;
   border: none;
   text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 1s ease-in-out;
+}
+.search-form button:hover {
+  background-color: #c5c5c5;
 }
